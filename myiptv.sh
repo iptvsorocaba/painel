@@ -31,7 +31,7 @@ echo " "
 cd /var/www/
 git clone https://cbazone@bitbucket.org/cbazone/myiptv.git
 echo " "
-wget -O /etc/apache2/apache2.conf http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/apache2.conf
+wget -O /etc/apache2/apache2.conf https://raw.githubusercontent.com/iptvsorocaba/painel/master/apache2.conf
 echo " "
 rm  /var/www/html/index.html
 echo " "
