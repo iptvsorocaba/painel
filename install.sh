@@ -54,20 +54,20 @@ chgrp -R www-data myiptv
 # Apache
 sudo echo 'Configure the Apache WebServer'
 rm /etc/apache2/sites-available/000-default.conf
-cd /etc/apache2/sites-available/ && wget http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/000-default.conf
+cd /etc/apache2/sites-available/ && wget https://raw.githubusercontent.com/iptvsorocaba/painel/master/000-default.conf
 ##############################################################################
 # My IP : config_template.php , config.php
 rm /var/www/myiptv/config/config_template.php
-cd /var/www/myiptv/config/ && wget http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/config_template.php
+cd /var/www/myiptv/config/ && wget https://raw.githubusercontent.com/iptvsorocaba/painel/master/config_template.php
 ##############################################################################
 # My IP : config_template.php , config.php
 rm /var/www/myiptv/config/config.php
-cd /var/www/myiptv/config/ && wget http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/config.php
+cd /var/www/myiptv/config/ && https://raw.githubusercontent.com/iptvsorocaba/painel/master/config.php
 ##############################################################################
 rm /etc/apache2/mods-enabled/fastcgi.conf
-cd /etc/apache2/mods-enabled/ && wget http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/fastcgi.conf
+cd /etc/apache2/mods-enabled/ && wget https://raw.githubusercontent.com/iptvsorocaba/painel/master/fastcgi.conf
 ##############################################################################
-wget -O /etc/apache2/apache2.conf http://raw.githubusercontent.com/marconimp/MyIPTV-Panel/master/apache2.conf
+wget -O /etc/apache2/apache2.conf https://raw.githubusercontent.com/iptvsorocaba/painel/master/apache2.conf
 ##############################################################################
 # Restart Apache and php5-fpm
 service apache2 reload && service apache2 restart
